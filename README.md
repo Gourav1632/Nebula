@@ -1,13 +1,13 @@
 # Nebula
 
-Description of the project.
+## Description of the project
 A website designed to invest fake money in live stock market for learning purpose.
 
 ## Table of Contents
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
+1. Clone the repository: `https://github.com/Gourav1632/Nebula.git`
 2. Make sure you are in the folder's directory.
 3. Install the dependencies: `npm install` from terminal.
 4. Start the server: `node app.js`
