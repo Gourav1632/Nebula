@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1E222D ;
+}
+
+.Navbar{
+    background-color: #131319;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.options{
+    margin: 0px 500px 0px 20px;
+    font-size: 1.2rem;
+    display: flex;
+    color: white;
+}
+.options div{
+    margin: 0px 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logout{
+    
+    position: absolute;
+    left: 95%;
+}
+#logout button{
+    border-radius: 20px;
+    width: 50px;
+}
+.grid-container{
+    /* width: 100vh; */
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 350px;
+    grid-template-rows: 3fr 1fr;
+}
+.graph{
+    grid-area: 1/1/2/2;
+}
+.orderblock{
+    grid-area: 2/1/3/2;
+}
+.buy-sell{
+    grid-area: 1/2/3/3;
+}s
+    .current-price{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .search_box {
+        margin: 8px 100px; 
+        display: flex;
+        justify-content: center;
+    }
+    
+    .search_box form {
+        display: flex;
+        align-items: center;
+    }
+    
+    .search_box input[type="search"] {
+        padding: 9px 13px;
+        border: 2px white ;
+        border-radius: 20px;
+        background-color: #555;
+        color: white; 
+        width: 300px;
+    }
+    
+    .search_box input[type="search"]::placeholder {
+        color: white; 
+    }
+    .search_box button img{
+        background: none;
+    }
+    .search_box button { 
+        background: none;   
+        padding: 9px 13px;
+        color: white; 
+        border: none;
+        border-radius: 20px;
+        margin-left: -47px; 
+    }
+    
+    
+    .search_box button:focus {
+        outline: none; 
+    }
+    .recents{
+        height: 358px   ;
+        width: 100%;
+        
+        border: 1px solid #484a4f;
+        border-radius: 2px;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+    .buy-window{
+        border: 1px solid #484a4f;
+        border-radius: 2px;
+        width: 350px;
+        background-color: #1E222D;
+        color: white;
+        height: 228px;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .login-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .login-button button{
+        padding: 13px 13px;
+        font-weight: bolder;
+        width: 200px;
+        background-color: #39ace7; 
+        color: white; 
+        border: none;
+        margin: 10px;
+        border-radius: 5px; 
+    
+    }
+    #buy-button{
+        background-color: #0ECB81;
+    }
+    #buy-button:hover{
+        background-color: #50c297;
+    }
+    #sell-button{
+        background-color: #F23645;
+    }
+    #sell-button:hover{
+        background-color: #f04d5b;
+    }
+    .login-button button:hover{
+        background-color: #0784b5;
+    }
+    #amount_input{
+        padding: 9px 13px;
+        border: 2px white ;
+        border-radius: 5px;
+        background-color: #555; 
+        color: white;
+        width: 300px;
+    }
+    .search_box input[type="number"]::placeholder {
+        color: white; 
+    }
+   .orderblock{
+    color: white;
+   }
+   .orderblock table{
+    padding:  20px 10px;
+    width: 100%;
+    text-align: center;
+   }
+   tr{
+    height: 30px;
+   }
+   th{
+    border-bottom: 1px solid #484a4f;
+   }
+

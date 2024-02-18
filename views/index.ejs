@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="Navbar">
+            <div class="logo">
+                <img style="margin-right: 10px;" height="35px" src="assets/logo.png" alt="">
+                <h1>Nebula</h1>
+            </div>
+            <div class="search_box">
+                <form role="search">
+                    <input id="search_input" class="form-control" type="search" placeholder="What's on your mind?" aria-label="Search">
+                    <button id="search_button" type="submit"><img  onmouseout="this.src='assets/download(1).svg';" onmouseover="this.src='assets/download.svg';" id="white-search" style="margin: 0px 2px 2px 0px;" height="20px" src="assets/download(1).svg" alt="search-icon"></button>
+                </form>
+            </div>            
+            <div class="login-button">
+              <form action="/signUp">
+                <button>Login/Register</button>
+              </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="position-relative overflow-hidden  text-center">
+        <div id="top-div" class="col-md-6 p-lg-5 mx-auto mt-2">
+          <h1  id="tagline" class="display-3 fw-bold">Uncover The <span style="color: white;">Stock Market's</span> Story With Us</h1>
+          <h3 class="fw-normal  mb-3 ">Master the real life investing with fake money and no risk.</h3>
+          <div class="login-button d-flex gap-3 justify-content-center lead fw-normal">
+            <form  action="/signup">
+              <button action>Get Started</button>
+            </form>
+          </div>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    <div align="center" class="video">
+      <video class="video" autoplay loop muted plays-inline  height="500px">
+        <source src="assets/nebula.mp4">
+      </video>
+    </div>
+
+    <div class="feature">
+      <div class="hidden">
+        <h2>Indian markets at your fingertips.</h2>
+        <p>Long term or short term, high risk or low risk. Be the kind of investor you want to be.</p>
+        <ul class="learn-options">
+          <li>Learn Mutual funds & SIPs</li>
+          <li>Learn Stocks & Itraday</li>
+          <li>Learn Future & Options</li>
+        </ul>
+      </div>
+      <img class="hidden" src="assets/phone.svg" alt=""> 
+    </div>
+
+    <div class="team">
+      <h2 style="color: white;" align="center">Team <span style="color: #39ace7;">Bro Code</span></h2>
+      <div class="photos">
+        <div><img  height="200px" src="assets/gaurav.jpeg" alt="">Gourav</div>
+        <div><img height="200px" src="assets/krishna.jpg" alt="">Krishn</div>
+        <div><img height="200px" src="assets/manan.jpeg" alt="">Manan</div>
+      </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span  class="mb-3 mb-md-0 text-body-secondary"> <span style="color: white;">© 2024 Team Bro Code</span></span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+      </ul>
+    </footer>
+
+
+      <script>
+        const observer = new IntersectionObserver((entries)=>{
+          entries.forEach((entry)=>{
+            console.log(entry)
+            if(entry.isIntersecting){
+              entry.target.classList.add('show');
+
+            }else{
+               entry.target.classList.remove('show');
+            }
+          });
+        });
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el)=>observer.observe(el));
+      </script>
+</body>
+</html>
